@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Crystal Hangman</title>
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <link rel="shortcut icon" href="assets/img/favicon.ico">
+    </head>
+    <body>
+        <div id="winnerSign">
+            <img src="assets/img/star.gif"><img src="assets/img/shortline.gif">
+            <h2>You Win!</h2>
+            <img src="assets/img/shortline.gif"><img src="assets/img/star.gif">
+            <br>
+            <br>
+            <br>
+            <p>Heed this advice:</p>
+            <p class="sans-serif" id="fortune"></p>
+            <img src="assets/img/longline.gif">
+            <p>
+                <br>Click here to test your fate again
+            </p>
+
+        </div>
+        <div id="loserSign">
+            <img src="assets/img/star.gif"><img src="assets/img/shortline.gif">
+            <h2>You Lose!</h2>
+            <img src="assets/img/shortline.gif"><img src="assets/img/star.gif">
+            <br>
+            <br>
+            <br>
+            <p>Heed this advice:</p>
+            <p class="sans-serif" id="fortune2"></p>
+            <img src="assets/img/longline.gif">
+            <p>
+                <br>Click here to test your fate again
+            </p>
+        </div>
+        <div class="container-flexible">
+            <div class="row">
+                <div class="jumbotron">
+                    <img src="assets/img/star.gif">
+                    <img src="assets/img/longline.gif">
+                    <img src="assets/img/star.gif">
+                    <h1>Hangman</h1>
+                    <img src="assets/img/star.gif">
+                    <img src="assets/img/longline.gif">
+                    <img src="assets/img/star.gif">
+                    <br><br><br>
+                    <p>Type a letter to begin.</p>
+        
+                </div>
+                <div class="col-md-12 game-stage">
+                    <h2><img src="assets/img/star.gif" class="star">Type a Letter <img src="assets/img/star.gif" class="star"></h2>
+                    <div class="col-md-6">
+                        <h4>Number of Guesses</h4><p id="guessesLeft"></p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>The total value of your crystals is:</h4><p id="playerValue">X</p>
+                    </div>
+                <div class="col-md-12">
+                    <h3><b>Number of wins:</b> <span id="winCount">0</span></h3>
+                    <img src="assets/img/star.gif">
+                    <img src="assets/img/longline.gif">
+                    <img src="assets/img/star.gif">
+                    <h3><b>Number of losses:</b> <span id="lossCount">0</span></h3>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Ⓒ Amy Almazar. Sound effects from <a href="http://www.freesound.org">freesound.org.</a>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </body>
+</html>
